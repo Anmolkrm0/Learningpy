@@ -1,0 +1,1 @@
+import{S as r}from"./H75Y2WTH.js";import{f as t}from"./PQ35KENF.js";var e=t(r()),o=()=>{try{return typeof window!==void 0&&e.default.runtime.getURL("/pages/chat/index.html")===window.location.href}catch{return!1}};export{o as a};

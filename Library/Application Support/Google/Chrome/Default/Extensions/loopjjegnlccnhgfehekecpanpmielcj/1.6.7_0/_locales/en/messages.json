@@ -1,0 +1,14 @@
+{
+   "extDefaultTitle": {
+      "message": "TestCase Studio record the user actions performed on a web application in English Sentences."
+   },
+   "extDescription": {
+      "message": "TestCase Studio record the user actions performed on a web application in English Sentences."
+   },
+   "extName": {
+      "message": "TestCase Studio"
+   },
+   "language": {
+      "message": "en"
+   }
+}

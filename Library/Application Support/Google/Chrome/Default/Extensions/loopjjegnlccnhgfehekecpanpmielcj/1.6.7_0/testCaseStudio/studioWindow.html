@@ -1,0 +1,386 @@
+<!-- Created by sanjay kumar on 25/06/2020. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TestCase Studio</title>
+    <link rel="stylesheet" type="text/css" href="studio.css" type="text/css" media="screen" />
+    <style rel="stylesheet" id="animation-style"></style>
+    <style rel="stylesheet" id="animation-style-offer"></style>
+    <meta name="theme-color" content="#5fba7d">
+    <script type="text/javascript" src="jquery.js" defer></script>
+
+</head>
+
+<body>
+    <!--
+        insert modal
+    -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <h2 class="screen_name"></h2>
+        <img class="modal-content" id="img01">
+        <div class="chevrons">
+            <img id="previous" class="controls" />
+            <img id="next" class="controls" />
+        </div>
+
+    </div>
+    <div id='showList'>
+        <div style="
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+            ">
+
+            <div id="collapseWindow">
+                <div class="lowerContainerDiv">
+                    <div id="testCase-container" class="leftContainerDiv">
+                        <button style="position: relative; left: -35px;" class="headerGearIcon">
+                            <i class="fas fa-plus" aria-hidden="true"
+                               style=" color: #291818; font-size: 1.2em; padding-left: 8px; "></i>
+                            <span class="monserrat"
+                                  style="text-transform: capitalize;color: #4D4D4D;line-height: 27px;">New Case</span>
+                        </button>
+                        <div class="searchBoxContainer">
+                            <input id="filterTestCases" type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="main__section">
+                        <div id="command-container" class="rightContainerDiv left__section">
+                            <div id="downloadFileName">
+                                <!-- <p data-placeholder="Set the TestCase Name here" title="Edit test case name" contenteditable="true"></p> -->
+                                <input type="text" maxlength="255" placeholder="Set the TestCase Name here" title="Edit test case name" />
+                            </div>
+                            <div class="rightContainerUpper" id='right_Upper_sub_Container'>
+                                <div id="iconsContainer" class="testCaseActionIcons">
+                                    <div id="record" class="iconContainer">
+                                        <button id='recordIcon' class="iconContainer">
+                                            <span class="pauseBtn toolTip">Click to stop recording.</span>
+                                        </button>
+                                    </div>
+                                    <button class="attrFilterBtn inactive">
+                                        <span class="filter toolTip">Set attribute for XPath & cssSelector.</span>
+                                    </button>
+                                    <button id='clearTestCase' class="iconContainer">
+                                        <span class="deleteBtn toolTip">Clear all recorded steps.</span>
+                                    </button>
+                                    <button class="uiConfigBtn">
+                                        <span class="config toolTip">Click to add/remove columns.</span>
+                                    </button>
+    
+                                    <div class="top_ads__viewer">
+                                        <div class="top_ads__navigation__btn top_navigate__prev__btn"></div>
+                                        <div class="top_ads__container"></div>
+                                        <div class="top_ads__navigation__btn top_navigate__next__btn"></div>
+                                    </div>
+    
+                                    <div id="saveBtnForDebug" class="iconContainer" style="display:none; cursor: pointer;
+                                            cursor: pointer;
+                                            width: 23px;
+                                            height: 23px;
+                                            border-radius: 50px;
+                                            border: 2px solid #3b91df;
+                                            text-align: center;
+                                            margin-left: 5px;
+                                            " title="Save">
+                                        <i class="fa fa-save" style="font-size: 17px;"></i>
+                                    </div>
+                                </div>
+                                
+                                <div id='debugTestStepName'>
+                                    <div style="margin-top: 10px; max-width: 190px;">
+                                        <span style="font-size: 12px; font-family: sans-serif;">Set driver command</span>
+                                        <div id='inputToggle' class="toggle-btn inactive">
+                                            <div class="toggle-circle"></div>
+                                            <span class="toggle toolTip">Click to set driver command.</span>
+                                        </div>
+                                    </div>
+                                    <a class="upgradeBtn" target="_blank" href="https://selectorshub.com/testcase-studio-pro/">
+                                        <span class="proFeature1 toolTip">Upgrade to Pro, just $5/month</span>
+                                        Upgrade
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="attributeFilter">
+                                Set Attribute for XPath/CSS :
+                                <label><input class="chooseAttr textXpath" type="checkbox" title="xpath with text or without text." checked>text</label>
+                                <label><input class="chooseAttr id" type="checkbox" name="id" title="Uncheck to generate XPath/cssSelector without id" checked />id</label>
+                                <label><input class="chooseAttr class" type="checkbox" name="class" title="Uncheck to generate XPath/cssSelector without class" checked />class</label>
+                                <label><input class="chooseAttr name" type="checkbox" name="name" title="Uncheck to generate XPath/cssSelector without name" checked />name</label>
+                                <label><input class="chooseAttr placeholder" type="checkbox" name="placeholder" title="Uncheck to generate XPath/cssSelector without placeholder" checked />placeholder</label>
+                            </div>
+    
+                            <div class="columns">
+                                Customize Columns :
+                                <label><input class="chooseColumns data" type="checkbox" name="data" title="Uncheck to delete Data column" checked />Data</label>
+                                <label><input class="chooseColumns expResult" type="checkbox" name="expResult" title="Uncheck to delete Exp Result column" checked />Exp Result</label>
+                                <label><input class="chooseColumns xpath" type="checkbox" name="xpath" title="Uncheck to delete XPath column" checked />XPath</label>
+                                <label><input class="chooseColumns cssSelector" type="checkbox" name="cssSelector" title="Uncheck to delete cssSelector column" checked />cssSelector</label>
+                                <label><input class="chooseColumns Screenshoot" type="checkbox" name="Screenshot" title="Uncheck to delete screenshot column" checked />Screenshot</label>
+                            </div>
+    
+                            <div class="inputFeildContainer">
+                                <input type="text" id='xpathInput' placeholder="keep xpathvalue as keyword in command." autocomplete="off" autocorrect="off" title='You can change this command, just keep xpathvalue as keyword where you want to have xpath value in command. For ex- FindBy(xpath="xpathvalue") or if xpath is not inside double quotes then FindBy(xpath=xpathValue)' spellcheck="false" value='driver.findElement(By.xpath("xpathvalue"))'>
+                                <span id='helperText'></span>
+                            </div>
+    
+                            
+                            <div id="sys-info-wrapper">
+                                <table id="system-information">
+                                  <thead>
+                                    <th class="system-information-text"></th>
+                                  </thead>
+                                </table>
+                                <div class="copy-sys-info">
+                                  <span class="copy-sys-info-tooltip hideElement">Copied</span>
+                                </div>
+                            </div>
+    
+    
+                            <div class="rightContainerLower" id='sub_content'>
+                                <table id="command-grid" class="tablesorter" cellspacing="0">
+                                    <thead class="fixed">
+                                        <tr>
+                                            <th style="box-shadow: none !important; width: 30px">
+                                                <div>
+                                                    #
+                                                </div>
+                                            </th>
+                                            <th style="box-shadow: none !important; ">
+                                                <div class="header">
+                                                    Steps
+                                                    <button class="copyAllButton">
+                                                        <span class="copyAllSteps toolTip">Click to copy all Test Steps.</span>
+                                                    </button>
+                                                </div>
+                                            </th>
+                                            <th id="dataHeader" style="box-shadow: none !important; ">
+                                                <div class="header">
+                                                    Data
+                                                    <button class="copyAllData">
+                                                        <span class="copyAllStepsData toolTip">Click to copy all step's Data.</span>
+                                                    </button>
+                                                </div>
+                                            </th>
+                                            <th id="expResHeader" style="box-shadow: none !important; ">
+                                                <div class="header">
+                                                    Exp Result
+                                                    <button class="copyAllExpRes">
+                                                        <span class="copyAllExpRes toolTip">Click to copy all Expected Result.</span>
+                                                    </button>
+                                                </div>
+                                            </th>
+                                            <th id="xpathHeader" style="box-shadow: none !important;">
+                                                <div class="header">
+                                                    <span id="toggleHeader">XPath</span>
+                                                    <button id='updatetitle' class="copyAllXpath">
+                                                        <span class="copyAllCommand toolTip">Click to copy all commands/xpaths.</span>
+                                                    </button>
+                                                </div>
+                                            </th>
+                                            <th id="cssSelectorHeader" style="box-shadow: none !important;">
+                                                <div class="header">
+                                                    <span id="toggleHeader">cssSelector</span>
+                                                    <button id='updatetitle' class="copyAllCss">
+                                                        <span class="copyAllCommand toolTip">Click to copy all cssSelector.</span>
+                                                    </button>
+                                                </div>
+                                            </th>
+                                            <th id="screenshotHeader" style="box-shadow: none !important;">
+                                                <div class="header">
+                                                    <span id="toggleHeader">Screenshots</span>
+                                                    <div id="screenshotToggle" class="toggle-btn inactive">
+                                                        <div class="toggle-circle"></div>
+    
+                                                    </div>
+                                                </div>
+                                            </th>
+    
+                                            <th style="box-shadow: none !important; width: 80px">
+                                                <a class="undo" href="https://selectorshub.com/testcase-studio-pro/plans/" target="_blank">
+                                                    <span class="undo-btn toolTip">Upgrade to Pro for Undo feature</span>
+                                                    <span class="undo-icon"></span>
+                                                </a>
+                                            </th>
+    
+    
+    
+                                        </tr>
+                                    </thead>
+                                    <tbody id="records-grid">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tablePlaceholder" style="">
+                                <!-- <form id="register_form">
+                                    <h2 id="form_title">Please Register to continue</h2>
+                                    <input type="email" name="email" id="email" placeholder="enter your email">
+                                    <input type="text" name="company" placeholder="company" id="company">
+                                    <input type="password" name="password" id="password" placeholder="enter your password">
+                                    <input type="submit" name="register" id="submit_btn" value="Register">
+                                    <span id="register_footer">
+                                        <a id="registration_help" target="_blank" href="https://bit.ly/SH_Slack" title="Connect here for immediate support.">Need Help</a>
+                                        <span> | </span>
+                                        <a id="registration_tutorial" target="_blank" href="https://www.youtube.com/watch?v=-hnCYkW6s0U" title="Click to learn how to use TestCase Studio.">Tutorial</a>
+                                    </span>
+                                    <div class="user_target">Help us to achieve <a class="target_link" href="https://bit.ly/chrome-tcs" target="_blank">50K users</a> or <a class="target_link" href="https://bit.ly/SH_Patron" target="_blank">100 Patrons</a>  & we will remove this registration.</div>
+                                </form> -->
+                            </div>
+                            <div class="rightContainerFooter" id='save_sub_content'>
+                                <!-- <div id="snackbar"></div> -->
+                                <button title="Save" id="save_btn" class="saveTestCaseBtn">
+                                    <div class="download"></div>
+                                    Test Case
+                                    <div class="loader" id="loader"></div>
+                                </button>
+                                <button title="Click to execute this test on testRigor" id="execute_btn" class="executeTestCaseBtn">
+                                    <!-- <a class="testRigorLink" href="https://testrigor.com/?utm_source=selectorshub&utm_medium=tcs" target="_blank">Execute this Test on testRigor</a> -->
+                                    <a class="testRigorLink" href="https://testrigor.com/?utm_source=selectorshub&utm_medium=tcs" target="_blank">Execute Steps in English as Code</a>
+                                </button>
+    
+                                <!-- <a class="proFeatureFile" target="_blank" href="https://selectorshub.com/testcase-studio-pro/">
+                                        <span class="proFeature1 toolTip">Upgrade to Pro, just $2.5/month</span>
+                                        Upgrade
+                                    </button>
+                                </a> -->
+                                <a target="_blank" href="https://selectorshub.com/testcase-studio-pro/plans/">
+                                    <button title="Upgrade to Pro version to access this feature"  class="proFeatureScreenshot">
+                                        <span class="proFeature2 toolTip">Upgrade to Pro version to access this feature.</span>
+                                        <!-- <div class="download"></div> -->
+                                        Record Multi Test Cases
+                                    </button>
+                                </a>
+                                <a target="_blank" href="https://selectorshub.com/testcase-studio-pro/plans/">
+                                    <button title="Upgrade to Pro version to access this feature"  class="proFeatureScreenshot">
+                                        <span class="proFeature2 toolTip">Upgrade to Pro version to upload test case directly into TestRail.</span>
+                                        <div class="upload"></div>
+                                        TestRail
+                                    </button>
+                                </a>
+                                <a target="_blank" href="https://selectorshub.com/testcase-studio-pro/plans/">
+                                    <button title="Upgrade to Pro version to access this feature"  class="proFeatureScreenshot">
+                                        <span class="proFeature2 toolTip">Upgrade to Pro version to access this feature.</span>
+                                        <!-- <div class="download"></div> -->
+                                        Add Columns
+                                    </button>
+                                </a>
+                                <a target="_blank" href="https://selectorshub.com/testcase-studio-pro/plans/">
+                                    <button title="Upgrade to Pro version to access this feature" class="proFeatureRecording">
+                                        <span class="proFeature3 toolTip">Upgrade to Pro version to access this feature</span>
+                                        Record Screen
+                                    </button>
+                                </a>
+                            </div>
+    
+                            <div class="infoBlock">
+                                <a class="requestHeader pro" href="https://selectorshub.com/testcase-studio-pro/plans/" target="_blank">
+                                    <span class="download"></span>
+                                    <span class="proFeature1 toolTip">Upgrade to Pro for these feature</span>
+                                    Last Test Case | <span class="download"></span> Network Logs |
+                                </a>
+                                <a href="https://bit.ly/shub_ads" target="_blank" class="ads__info__icon">
+                                    <div class="ads__info__tooltip">Sponsored ads. Upgrade to Pro Version to remove these ads.</div>
+                                </a>
+                                <div class="ads__viewer">
+                                    <div class="ads__navigation__btn navigate__prev__btn"></div>
+                                    <div class="ads__container"></div>
+                                    <div class="ads__navigation__btn navigate__next__btn"></div>
+                                </div>
+                                <a class="requestHeader review-link" href="https://my.bugasura.io/my-projects/testcase-studio" target="_blank" title="Raise a ticket here for any issue.">
+                                    Issue
+                                </a>
+                                <span> | </span>
+                                <a target="_blank" class="changelog" href="https://selectorshub.com/testcase-studio/" title="Click to see the changelog.">
+                                    <span class="version">v 1.6.7</span>
+                                </a>
+                                <span> | </span>
+                                <a class="theme-toggle" href="https://selectorshub.com/testcase-studio-pro/plans/" target="_blank">
+                                    <span class="dark-theme toolTip">Upgrade to Pro for dark theme</span>
+                                    <span class="theme"></span>
+                                </a>
+                                <div class="popup__actions__container hideElement">
+                                    <a href="#" class="popup__action keep__ads">KEEP ADS</a>
+                                    <a href="https://selectorshub.com/testcase-studio-pro/plans/" target="_blank" class="popup__action go__ad__free">GO AD-FREE, JUST $50/YEAR</a>
+                                </div>
+                            </div>
+                            <!-- Snackbar -->
+                            <div id="snackbar"></div>
+    
+                        </div>
+                        <div class="right__section hideElement">
+                            <a href="https://selectorshub.com/testcase-studio-pro/plans/" target="_blank" class="ads__header">Upgrade to Pro Version to go Ads Free</a>
+                            <div class="ads">
+                                <div>
+                                    <div id="offer-countdown-ads" class="hideElement">
+                                        <div class="offer__timer">
+                                            <span class="offer__text"></span>
+                                            <span class="offer__countdown"></span>
+                                        </div>
+                                        <div class="offer__ads__viewer">
+                                            <div class="offer__ads__navigation__btn offer__navigate__prev__btn"></div>
+                                            <div class="offer__ads__container"></div>
+                                            <div class="offer__ads__navigation__btn offer__navigate__next__btn"></div>
+                                        </div>
+                                    </div>
+                                    <div id="image-ads" class="image__ad hideElement">
+                                        <div class="prev__ad__img"></div>
+                                        <div class="images__container"></div>
+                                        <div class="next__ad__img"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+    </div>
+
+    <div id="upgrade-popup" class="hideElement">
+        <div class="upgrade__popup__content">
+            <p class="upgrade__popup__message">Thanks for trying out TestCase Studio. This is a free version, and although this is free forever but Pro version must be used for business use. Would you like to take a free trial of the Pro version?</p>
+            <div class="upgrade__popup__btns">
+                <a id="upgrade-confirm" href="https://selectorshub.com/testcase-studio-pro/plans" target="_blank" class="upgrade__popup__btn upgrade__confirm">Take Free Trial</a>
+                <a id="upgrade-cancel" href="#" class="upgrade__popup__btn upgrade__cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="license-popup" class="hideElement">
+        <div class="license__popup__content">
+            <h4>End User License Agreement</h4>
+            <div class="license__popup__btns">
+                <div class="accept__block">
+                    <input type="radio" name="license-option" id="accept-input" checked>
+                    <label for="accept-input">Using it for personal and learning</label>
+                </div>
+                <div class="upgrade__block">
+                    <input type="radio" name="license-option" id="upgrade-input">
+                    <label for="upgrade-input">If using it for business</li>
+                </div>
+                <div class="actions">
+                    <a id="license-accept" href="#" class="license__popup__btn license__accept">Accept</a>
+                    <a id="license-upgrade" href="#" target="_blank" class="license__popup__btn license__upgrade disabled">Upgrade</a>
+                </div>
+                <a href="https://selectorshub.com/terms-of-service" target="_blank" id="terms-and-services">Terms And Services</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../extension/saveFile.js"></script>
+    <script src="../extension/script.js"></script>
+    <script src="../extension/countries.js"></script>
+    <script src="../extension/platform.js"></script>
+    <script src="../extension/captureEvents.js"></script>
+</body>
+
+</html>

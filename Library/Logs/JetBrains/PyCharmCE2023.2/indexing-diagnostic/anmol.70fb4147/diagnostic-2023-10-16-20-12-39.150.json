@@ -1,0 +1,59 @@
+{
+  "appInfo" : {
+    "build" : "232.9559.58",
+    "buildDate" : "2023-08-22T16:17:53.832Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2023-10-16T14:42:39.157128Z",
+    "os" : "macOS 12.6",
+    "runtime" : "JetBrains s.r.o. 17.0.8 17.0.8+7-b1000.8"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "anmol",
+    "times" : {
+      "scanningReason" : "changes in: \"Python SDK py3.8 /Users/anmol/miniconda3/envs/py3.8/bin/python\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 1,
+      "creatingIteratorsTime" : 3623000,
+      "collectingIndexableFilesTime" : 5350742000,
+      "delayedPushPropertiesStageTime" : 449368000,
+      "indexExtensionsTime" : 0,
+      "dumbModeStart" : "2023-10-16T14:42:33.066463Z",
+      "dumbWallTimeWithPauses" : 5974693000,
+      "dumbWallTimeWithoutPauses" : 5974693000,
+      "updatingStart" : "2023-10-16T14:42:33.059399Z",
+      "updatingEnd" : "2023-10-16T14:42:39.041156Z",
+      "totalWallTimeWithPauses" : 5982134209,
+      "wallTimeOnPause" : 0,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 5982134209
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 8262,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 0
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Python SDK py3.8 /Users/anmol/miniconda3/envs/py3.8/bin/python",
+      "numberOfScannedFiles" : 8262,
+      "numberOfSkippedFiles" : 2,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 2462735525,
+      "scanningTime" : 2731542836,
+      "timeProcessingUpToDateFiles" : 371976675,
+      "timeUpdatingContentLessIndexes" : 7836775,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    } ]
+  }
+}

@@ -1,0 +1,29 @@
+2023/10/23-19:09:23.996 6407 Creating DB /Users/anmol/Library/Application Support/Google/Chrome/Default/IndexedDB/https_streamhacker.notion.site_0.indexeddb.leveldb since it was missing.
+2023/10/23-19:09:24.055 6407 Reusing MANIFEST /Users/anmol/Library/Application Support/Google/Chrome/Default/IndexedDB/https_streamhacker.notion.site_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/23-19:09:26.384 15103 Level-0 table #5: started
+2023/10/23-19:09:26.403 15103 Level-0 table #5: 3494 bytes OK
+2023/10/23-19:09:26.445 15103 Delete type=0 #3
+2023/10/23-19:09:26.445 6407 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/10/23-19:09:53.026 15103 Level-0 table #7: started
+2023/10/23-19:09:53.045 15103 Level-0 table #7: 794 bytes OK
+2023/10/23-19:09:53.099 15103 Delete type=0 #4
+2023/10/23-19:09:53.099 6407 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/10/24-11:32:37.996 6803 Level-0 table #9: started
+2023/10/24-11:32:38.007 6803 Level-0 table #9: 318 bytes OK
+2023/10/24-11:32:38.025 6803 Delete type=0 #6
+2023/10/24-11:32:38.026 6803 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x002\x002\x007\x007\x006\x001\x002\x007\x005' @ 284 : 0
+2023/10/24-11:32:38.026 6803 Compacting 1@0 + 1@1 files
+2023/10/24-11:32:38.035 6803 Generated table #10@0: 18 keys, 568 bytes
+2023/10/24-11:32:38.035 6803 Compacted 1@0 + 1@1 files => 568 bytes
+2023/10/24-11:32:38.051 6803 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/10/24-11:32:38.052 6803 Delete type=2 #7
+2023/10/24-11:32:38.052 6803 Delete type=2 #9
+2023/10/24-11:32:38.053 6803 Manual compaction at level-0 from '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x002\x002\x007\x007\x006\x001\x002\x007\x005' @ 284 : 0 .. (end); will stop at (end)
+2023/10/24-11:32:38.053 6803 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x002\x002\x007\x007\x006\x001\x002\x007\x005' @ 284 : 0
+2023/10/24-11:32:38.053 6803 Compacting 1@1 + 1@2 files
+2023/10/24-11:32:38.063 6803 Generated table #11@1: 69 keys, 1261 bytes
+2023/10/24-11:32:38.063 6803 Compacted 1@1 + 1@2 files => 1261 bytes
+2023/10/24-11:32:38.080 6803 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/24-11:32:38.081 6803 Delete type=2 #10
+2023/10/24-11:32:38.081 6803 Delete type=2 #5
+2023/10/24-11:32:38.082 6803 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x002\x002\x007\x007\x006\x001\x002\x007\x005' @ 284 : 0 .. (end); will stop at (end)

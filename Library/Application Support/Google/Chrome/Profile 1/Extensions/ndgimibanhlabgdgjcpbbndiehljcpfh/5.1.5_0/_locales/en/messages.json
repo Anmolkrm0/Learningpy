@@ -1,0 +1,14 @@
+{
+   "extDefaultTitle": {
+      "message": "xPath plugin to auto generate, write and verify xpath & cssSelector."
+   },
+   "extDescription": {
+      "message": "xPath plugin to auto generate, write and verify xpath & cssSelector."
+   },
+   "extName": {
+      "message": "SelectorsHub"
+   },
+   "language": {
+      "message": "en"
+   }
+}

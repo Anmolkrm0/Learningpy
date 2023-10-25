@@ -1,0 +1,124 @@
+{
+  "appInfo" : {
+    "build" : "232.9559.58",
+    "buildDate" : "2023-08-22T16:17:21.504Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2023-10-24T07:28:11.929383Z",
+    "os" : "macOS 12.6",
+    "runtime" : "JetBrains s.r.o. 17.0.8 17.0.8+7-b1000.8"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "anmol",
+    "times" : {
+      "scanningReason" : "On project open",
+      "scanningType" : "FULL_ON_PROJECT_OPEN",
+      "scanningId" : 0,
+      "creatingIteratorsTime" : 344337000,
+      "collectingIndexableFilesTime" : 77960349000,
+      "delayedPushPropertiesStageTime" : 4131000,
+      "indexExtensionsTime" : 707907932,
+      "dumbModeStart" : "2023-10-24T07:26:52.015285Z",
+      "dumbWallTimeWithPauses" : 79883088000,
+      "dumbWallTimeWithoutPauses" : 79883088000,
+      "updatingStart" : "2023-10-24T07:26:51.708162Z",
+      "updatingEnd" : "2023-10-24T07:28:11.898373Z",
+      "totalWallTimeWithPauses" : 80193469250,
+      "wallTimeOnPause" : 0,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 80193469250
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 6,
+      "numberOfScannedFiles" : 2105251,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 286825
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Module 'anmol' (all roots)",
+      "numberOfScannedFiles" : 2096780,
+      "numberOfSkippedFiles" : 109,
+      "numberOfFilesForIndexing" : 286825,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 48676017903,
+      "scanningTime" : 59410894230,
+      "timeProcessingUpToDateFiles" : 2305213063,
+      "timeUpdatingContentLessIndexes" : 1921107041,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 707907932,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Python SDK py3.8 /Users/anmol/miniconda3/envs/py3.8/bin/python",
+      "numberOfScannedFiles" : 8262,
+      "numberOfSkippedFiles" : 2,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 9521281120,
+      "scanningTime" : 10493276291,
+      "timeProcessingUpToDateFiles" : 2694744780,
+      "timeUpdatingContentLessIndexes" : 47285854,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@43b51730' (non-project)",
+      "numberOfScannedFiles" : 209,
+      "numberOfSkippedFiles" : 4,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 1636792868,
+      "scanningTime" : 1761833668,
+      "timeProcessingUpToDateFiles" : 224825955,
+      "timeUpdatingContentLessIndexes" : 29616377,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Indexable set contributor 'Scratches & Consoles' (project)",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@43b51730' (project)",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Indexable set contributor 'Scratches & Consoles' (non-project)",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    } ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "./assets/icon128-on.png",
+         "16": "./assets/icon16-on.png",
+         "32": "./assets/icon32-on.png",
+         "64": "./assets/icon64-on.png"
+      },
+      "default_popup": "./popup.html",
+      "default_title": "Jam"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+Y"
+         }
+      },
+      "toggle-screenshot": {
+         "description": "Take screenshot",
+         "suggested_key": {
+            "default": "Ctrl+Shift+S"
+         }
+      },
+      "toggle-session-replay": {
+         "description": "Prompt instant replay",
+         "suggested_key": {
+            "default": "Ctrl+Shift+X"
+         }
+      },
+      "toggle-video": {
+         "description": "Start / stop tab recording",
+         "suggested_key": {
+            "default": "Ctrl+Shift+Space"
+         }
+      }
+   },
+   "description": "The fastest bug reporting tool. Cut your bug reporting time by 20x.",
+   "differential_fingerprint": "1.15f9046e052e53f85a0c272b311d879a6b9012218439e6995c97108c6d5af423",
+   "externally_connectable": {
+      "matches": [ "*://*.jam.dev/*", "*://*.jamtest.kitchen/*", "*://*.jam.test/*" ]
+   },
+   "icons": {
+      "128": "./assets/icon128-on.png",
+      "16": "./assets/icon16-on.png",
+      "32": "./assets/icon32-on.png",
+      "64": "./assets/icon64-on.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh0KJv3PNs+fP6Svu0rwARNc9TPZJywyhV6+ckYReLyMx0BUamJ6hRIzluvZvCl+4rJhiu/hbcRHrqRJUBVShmXriiAJn+xPEwZ8+XFkX37/KRPHZygbtArfhiUQH6ie+srsTB9AoBsceScFlJtWU8js2QXm/BQzQyqFj2FhxiWRpzX/vumqYlzZPSfYdl7YCVLuxVGdJZHObBgt1BiVJDfB0amiOCzl9dw8m4abkzTBpp43m6I5kR09xkHA5ppTPGeyKzbxXKCEt86UwfsM1LiZCojhpP/+252Gg2HWzCn5JOC7R3tpp2hxbXiMiAdHggTeRgwwq4nrqTQS+dT7jWwIDAQAB",
+   "manifest_version": 2,
+   "name": "Jam",
+   "optional_permissions": [ "desktopCapture" ],
+   "permissions": [ "tabCapture", "webRequest", "webRequestBlocking", "webNavigation", "activeTab", "tabs", "storage", "cookies", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.27.0",
+   "web_accessible_resources": [ "assets/*", "injected-scripts/*" ]
+}

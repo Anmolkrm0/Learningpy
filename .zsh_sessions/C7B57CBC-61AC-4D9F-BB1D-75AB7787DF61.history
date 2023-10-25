@@ -1,0 +1,1478 @@
+python v
+python_v
+PYHTON--VERSION
+python--version
+python
+python - v
+python --verion
+python --version
+exit
+python -v
+exit
+telnet 43.225.249.199
+telnet 43.225.249.199:554
+telnet 43.225.249.199.554
+exit
+python
+python
+clear
+java
+clear
+python__ V
+clear
+from selenium import webdriver\
+from selenium.webdriver.common.keys import Keys\
+\
+# create a new Chrome browser instance\
+browser = webdriver.Chrome()\
+\
+# Login - create a Test user with Password for automation and try login with that\
+browser.get("https://www.demo.jarvis.live/")\
+username = browser.find_element_by_id("username")\
+password = browser.find_element_by_id("password")\
+username.send_keys("testuser")\
+password.send_keys("testpassword")\
+password.send_keys(Keys.RETURN)\
+\
+# Cameras - verify whether cameras are online or not\
+camera_status = browser.find_element_by_id("camera-status")\
+assert camera_status.text == "Online", "Cameras are not online"\
+\
+# DVR Recordings - verify for which feed and what time DVR were not available\
+dvr_feed = browser.find_element_by_id("dvr-feed")\
+dvr_time = browser.find_element_by_id("dvr-time")\
+assert dvr_feed.text == "Feed 1" and dvr_time.text == "12:00 PM", "DVR recordings not available for Feed 1 at 12:00 PM"\
+\
+# Audit Report - verify if all alerts are coming for all events for current date\
+audit_report = browser.find_element_by_id("audit-report")\
+assert "All events" in audit_report.text, "Audit report not showing all events"\
+download_pdf = browser.find_element_by_id("download-pdf")\
+download_excel = browser.find_element_by_id("download-excel")\
+download_pdf.click()\
+download_excel.click()\
+\
+# Retail Panel - verify data in all graphs for current date\
+retail_panel_graphs = browser.find_elements_by_class_name("retail-panel-graph")\
+for graph in retail_panel_graphs:\
+    assert graph.text != "0", "Graph data is zero"\
+download_pdf = browser.find_element_by_id("download-pdf")\
+download_excel = browser.find_element_by_id("download-excel")\
+download_pdf.click()\
+download_excel.click()\
+\
+# FR Attendance - verify attendance for current date\
+attendance = browser.find_element_by_id("attendance")\
+assert attendance.text != "0", "Attendance is zero"\
+\
+# Graphical Insights - verify data in all graphs for current date\
+graphical_insights_graphs = browser.find_elements_by_class_name("graphical-insights-graph")\
+for graph in graphical_insights_graphs:\
+    assert graph.text != "0", "Graph data is zero"\
+download_pdf = browser.find_element_by_id("download-pdf")\
+download_excel = browser.find_element_by_id("download-excel")\
+download_pdf.click()\
+download_excel.click()\
+\
+# Vehicle Analytics - verify data in all graphs for current date\
+vehicle_analytics_graphs = browser.find_elements_by_class_name("vehicle-analytics-graph")\
+for graph in vehicle_analytics_graphs:\
+    assert graph.text != "0", "Graph data is zero"\
+\
+# Parking Analytics - verify data in all graphs for current date\
+parking_analytics_graphs = browser.find_elements_by_class_name("parking-analytics-graph")\
+for graph in parking_analytics_graphs:\
+    assert graph.text != "0", "Graph data is zero"\
+\
+# TMS - verify ticket creation and action\
+tms = browser.find_element_by_id("tms")\
+tms.click()\
+create_ticket = browser.find_element_by_id("create-ticket")\
+create_ticket.click()\
+ticket_subject = browser.find_element_by_id("ticket-subject")\
+ticket_subject.send_keys("Test Ticket")\
+ticket_description = browser.find_element_by_id("ticket-description")\
+ticket_description.send_keys("This is a test ticket")\
+ticket_submit = browser.find_element_by_id("ticket-submit")\
+ticket_submit.click()\
+tms.click()\
+action_ticket = browser.find_element_by_id("action-ticket")\
+action_ticket.click()\
+ticket_action = browser.find_element\
+
+/Applications/Python\ 3.11/Install\ Certificates.command ; exit;
+/Applications/Python\ 3.11/Update\ Shell\ Profile.command ; exit;
+python -v
+>>> import certifi\
+\
+>>> certifi.where()\
+'/usr/local/lib/python3.7/site-packages/certifi/cacert.pem'
+/Applications/Python\ 3.11/Update\ Shell\ Profile.command ; exit;
+python_ V
+python _v
+clear
+dir
+mk cd
+clear
+open terminal
+dir
+dir
+clear
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"\
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"\
+
+python --version
+$python __v
+]python3
+$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+pyenv install 3.9.2 \
+
+pyenv install 3.9.2 \
+
+clear
+/Library/Frameworks/Python.framework
+python__v
+python
+python --v
+python --v
+python
+python --v
+exit
+/Applications/Python\ 3.10/Update\ Shell\ Profile.command ; exit;
+python
+python
+which python
+python
+which python
+conda create -n py3.8 python=3.8 -y
+conda activate py3.8
+python
+conda install -c conda-forge ffmpeg
+mkdir Downloads/anmol && ffmpeg -i Downloads/Hsr12.stream.mp4 -vf "fps=1" -ss 00:00 -t 01:00 Downloads/anmol/%06d.jpg
+ffmpeg -i Downloads/Hsr12.stream.mp4 -vf "fps=1" -ss 00:00 -t 01:00 Downloads/anmol_/%06d.jpg
+Â¸
+ffmpeg -i Downloads/Hsr12.stream.mp4 -vf "fps=1" -ss 00:00 -t 01:00 Downloads/anmol_/%06d.jpg
+mkdir Downloads/anmol
+mkdir Downloads/anmol_
+ffmpeg -i input.mkv -x265-params crf=25 output.mp4
+ffmpeg -i emb7.mkv -x265-params crf=25 emb07.mp4
+python
+python
+pip install selenium 
+pip install -U selenium
+selenium version
+cd Documents/
+python code/hello_world.py
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/hello_world.py
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+ /usr/bin/env /usr/local/bin/python3.11 /Users/anmol/.vscode/extensions/ms-python.python-2023.12.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49720 -- /Users/anmol/Documents/code/import\ requests.py 
+python hello_world.py
+conda new -n automation 
+conda create -n automation 
+conda activate automation
+python
+conda create -n automation python=3.10
+python -m pip install selenium
+python hello_world.py
+run
+print
+i=10
+python -m pip install selenium
+/usr/local/bin/python3.11 "/Users/anmol/Documents/code/import requests.py"
+conda env list
+conda activate automation
+pwd
+mv import\ requests.py import_requests.py
+python import_requests.py
+pip install ipdb
+pwd
+conda activate automation
+python import_requests.py
+pip install ipdb
+python import_requests.py
+python import_requests.py
+conda activate automation
+/Users/anmol/miniconda3/envs/automation/bin/python /Users/anmol/Documents/code/import_requests.py
+conda activate automation
+conda activate automation
+conda activate automation
+conda activate automation
+htop
+top
+kill -9 51142
+top
+top
+kill -9 53561
+top
+top
+SUDO
+sud0 -h
+sudo_h
+sudo -h
+-d
+sudo -d
+sudo
+sudo docker
+docker
+sudo c
+sudo docker
+python
+brew install node
+npm install -g selenium-side-runner
+npm install -g selenium-side-runner
+sudo
+npm install -g selenium-side-runner
+npm install -g chromedriver
+cd base
+base
+dir
+dir
+sudo
+-v
+sudo -h
+npm install -g geckodriver
+sudo docker
+sudo docler
+selenium-side-runner -c "browserName=chrome"
+1\
+2\
+	\
+System.setProperty(â€ƒ¼webdriver.chrome.driverâ€ƒ½,path_to_browser_driver);\
+WebDriver driver = new ChromeDriver();\
+\
+\
+\
+\
+\
+\
+base
+sudo
+docker
+sudo docker
+selenium
+python -v
+pip install
+pip help install
+pip install requirement
+pip install log
+sudo
+sudo -u
+sudo 
+minicond
+miniconda
+python
+import org.openqa.selenium.By;\
+import org.openqa.selenium.WebDriver;\
+import org.openqa.selenium.WebElement;\
+import org.openqa.selenium.chrome.ChromeDriver;\
+import org.testng.Assert;\
+ \
+import java.util.concurrent.TimeUnit;\
+ \
+public class LoginTest {\
+    public static void main(String[] args) {\
+ \
+        System.setProperty("webdriver.chrome.driver",path_of_browser_driver);\
+        WebDriver driver = new ChromeDriver();\
+ \
+        String url = "https://www.lambdatest.com/";\
+ \
+        driver.get(url);\
+        driver.manage().window().maximize();\
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);\
+ \
+ \
+        WebElement login = driver.findElement(By.linkText("Login"));\
+        System.out.println("Clicking on the login element in the main page");\
+        login.click();\
+ \
+        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);\
+ \
+        WebElement email = driver.findElement(By.id("email"));\
+        WebElement password = driver.findElement(By.id("password"));\
+        WebElement loginButton = driver.findElement(By.id("login-button"));\
+ \
+        email.clear();\
+        System.out.println("Entering the email");\
+        email.sendKeys("your_email");\
+ \
+        password.clear();\
+        System.out.println("entering the password");\
+        password.sendKeys("your_password");\
+ \
+        System.out.println("Clicking login button");\
+        loginButton.click();\
+ \
+        String title = "Welcome - LambdaTest";\
+ \
+        String actualTitle = driver.getTitle();\
+ \
+        System.out.println("Verifying the page title has started");\
+        Assert.assertEquals(actualTitle,title,"Page title doesnt match");\
+ \
+        System.out.println("The page title has been successfully verified");\
+ \
+        System.out.println("User logged in successfully");\
+ \
+        driver.quit();\
+    }\
+}
+import webdriver
+import driver
+webdriver
+cd..
+quit
+sudo
+sudo miniconda
+open python
+open python
+open dir
+exit
+conda activate automation
+/Users/anmol/miniconda3/envs/automation/bin/python /Users/anmol/Documents/code/import_requests.py
+/Users/anmol/miniconda3/envs/automation/bin/python /Users/anmol/Documents/code/import_requests.py
+/Users/anmol/miniconda3/bin/python /Users/anmol/Documents/code/import_requests.py
+/Users/anmol/miniconda3/bin/python /Users/anmol/Downloads/test_checkthetitle.py
+/Users/anmol/miniconda3/bin/python /Users/anmol/Documents/code/import_requests.py
+/Users/anmol/miniconda3/bin/python /Users/anmol/Documents/code/import_requests.py
+exit
+conda activate automation
+conda activate automation
+conda activate base
+/Users/anmol/miniconda3/bin/python /Users/anmol/Documents/code/import_requests.py
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+public String username = "YOUR_USERNAME";\
+public String accesskey = "YOUR_ACCESSKEY";\
+public static RemoteWebDriver driver = null;\
+public String gridURL = "@hub.lambdatest.com/wd/hub";
+import org.openqa.selenium.By;\
+import org.openqa.selenium.WebElement;\
+import org.openqa.selenium.remote.DesiredCapabilities;\
+import org.openqa.selenium.remote.RemoteWebDriver;\
+import org.testng.Assert;\
+import org.testng.annotations.AfterClass;\
+import org.testng.annotations.BeforeClass;\
+import org.testng.annotations.Test;\
+ \
+import java.net.MalformedURLException;\
+import java.net.URL;\
+import java.util.concurrent.TimeUnit;\
+ \
+public class LoginTest {\
+    public String username = "YOUR_USERNAME";\
+    public String accesskey = "YOUR_ACCESSKEY";\
+    public static RemoteWebDriver driver = null;\
+    public String gridURL = "@hub.lambdatest.com/wd/hub";\
+ \
+@BeforeClass\
+public void setUp() throws Exception {\
+        DesiredCapabilities capabilities = new DesiredCapabilities();\
+        capabilities.setCapability("browserName", "chrome");\
+        capabilities.setCapability("version", "93.0");\
+        capabilities.setCapability("platform", "win10"); // If this cap isn't specified, it will just get the any available one\
+        capabilities.setCapability("build", "LoginTest");\
+        capabilities.setCapability("name", "LoginTestInChrome");\
+        try {\
+        driver = new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);\
+        } catch (MalformedURLException e) {\
+        System.out.println("Invalid grid URL");\
+        } catch (Exception e) {\
+        System.out.println(e.getMessage());\
+        }\
+        }\
+ \
+@Test()\
+public void test_1() {\
+ \
+        String url = "https://www.lambdatest.com/";\
+ \
+        driver.get(url);\
+        driver.manage().window().maximize();\
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);\
+ \
+ \
+        WebElement login = driver.findElement(By.linkText("Login"));\
+        System.out.println("Clicking on the login element in the main page");\
+        login.click();\
+ \
+        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);\
+ \
+        WebElement email = driver.findElement(By.id("email"));\
+        WebElement password = driver.findElement(By.id("password"));\
+        WebElement loginButton = driver.findElement(By.id("login-button"));\
+ \
+        email.clear();\
+        System.out.println("Entering the email");\
+        email.sendKeys("your_email");\
+ \
+        password.clear();\
+        System.out.println("entering the password");\
+        password.sendKeys("your_password");\
+ \
+        System.out.println("Clicking login button");\
+        loginButton.click();\
+ \
+        String title = "Welcome - LambdaTest";\
+ \
+        String actualTitle = driver.getTitle();\
+ \
+        System.out.println("Verifying the page title has started");\
+        Assert.assertEquals(actualTitle,title,"Page title doesnt match");\
+ \
+        System.out.println("The page title has been successfully verified");\
+ \
+        System.out.println("User logged in successfully");      \
+    }\
+ \
+    @AfterClass\
+    public void closeBrowser() {\
+        driver.close();\
+ \
+    }\
+}\
+print (hello)\
+\
+sudo\
+docker\
+import org.openqa.selenium.By;\
+import org.openqa.selenium.WebElement;\
+import org.openqa.selenium.remote.DesiredCapabilities;\
+import org.openqa.selenium.remote.RemoteWebDriver;\
+import org.testng.Assert;\
+import org.testng.annotations.AfterClass;\
+import org.testng.annotations.BeforeClass;\
+import org.testng.annotations.Test;\
+ \
+import java.net.MalformedURLException;\
+import java.net.URL;\
+import java.util.concurrent.TimeUnit;\
+ \
+public class LoginTest {\
+    public String username = "YOUR_USERNAME";\
+    public String accesskey = "YOUR_ACCESSKEY";\
+    public static RemoteWebDriver driver = null;\
+    public String gridURL = "@hub.lambdatest.com/wd/hub";\
+ \
+@BeforeClass\
+public void setUp() throws Exception {\
+        DesiredCapabilities capabilities = new DesiredCapabilities();\
+        capabilities.setCapability("browserName", "chrome");\
+        capabilities.setCapability("version", "93.0");\
+        capabilities.setCapability("platform", "win10"); // If this cap isn't specified, it will just get the any available one\
+        capabilities.setCapability("build", "LoginTest");\
+        capabilities.setCapability("name", "LoginTestInChrome");\
+        try {\
+        driver = new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);\
+        } catch (MalformedURLException e) {\
+        System.out.println("Invalid grid URL");\
+        } catch (Exception e) {\
+        System.out.println(e.getMessage());\
+        }\
+        }\
+ \
+@Test()\
+public void test_1() {\
+ \
+        String url = "https://www.lambdatest.com/";\
+ \
+        driver.get(url);\
+        driver.manage().window().maximize();\
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);\
+ \
+ \
+        WebElement login = driver.findElement(By.linkText("Login"));\
+        System.out.println("Clicking on the login element in the main page");\
+        login.click();\
+ \
+        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);\
+ \
+        WebElement email = driver.findElement(By.id("email"));\
+        WebElement password = driver.findElement(By.id("password"));\
+        WebElement loginButton = driver.findElement(By.id("login-button"));\
+ \
+        email.clear();\
+        System.out.println("Entering the email");\
+        email.sendKeys("your_email");\
+ \
+        password.clear();\
+        System.out.println("entering the password");\
+        password.sendKeys("your_password");\
+ \
+        System.out.println("Clicking login button");\
+        loginButton.click();\
+ \
+        String title = "Welcome - LambdaTest";\
+ \
+        String actualTitle = driver.getTitle();\
+ \
+        System.out.println("Verifying the page title has started");\
+        Assert.assertEquals(actualTitle,title,"Page title doesnt match");\
+ \
+        System.out.println("The page title has been successfully verified");\
+ \
+        System.out.println("User logged in successfully");      \
+    }\
+ \
+    @AfterClass\
+    public void closeBrowser() {\
+        driver.close();\
+ \
+    }\
+}
+sudo docker
+sudo
+sudo -g
+sudo -p
+sudo
+mk dor
+mk dir
+mk dit
+mk dir
+cd..
+cd//
+dir
+view page'\
+base\
+cd base\
+cd base\
+dir\
+sir\
+import org.openqa.selenium.By;\
+import org.openqa.selenium.WebElement;\
+import org.openqa.selenium.remote.DesiredCapabilities;\
+import org.openqa.selenium.remote.RemoteWebDriver;\
+import org.testng.Assert;\
+import org.testng.annotations.AfterClass;\
+import org.testng.annotations.BeforeClass;\
+import org.testng.annotations.Test;\
+ \
+import java.net.MalformedURLException;\
+import java.net.URL;\
+import java.util.concurrent.TimeUnit;\
+ \
+public class LoginTest {\
+    public String username = "YOUR_USERNAME";\
+    public String accesskey = "YOUR_ACCESSKEY";\
+    public static RemoteWebDriver driver = null;\
+    public String gridURL = "@hub.lambdatest.com/wd/hub";\
+ \
+@BeforeClass\
+public void setUp() throws Exception {\
+        DesiredCapabilities capabilities = new DesiredCapabilities();\
+        capabilities.setCapability("browserName", "chrome");\
+        capabilities.setCapability("version", "93.0");\
+        capabilities.setCapability("platform", "win10"); // If this cap isn't specified, it will just get the any available one\
+        capabilities.setCapability("build", "LoginTest");\
+        capabilities.setCapability("name", "LoginTestInChrome");\
+        try {\
+        driver = new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);\
+        } catch (MalformedURLException e) {\
+        System.out.println("Invalid grid URL");\
+        } catch (Exception e) {\
+        System.out.println(e.getMessage());\
+        }\
+        }\
+ \
+@Test()\
+public void test_1() {\
+ \
+        String url = "https://www.lambdatest.com/";\
+ \
+        driver.get(url);\
+        driver.manage().window().maximize();\
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);\
+ \
+ \
+        WebElement login = driver.findElement(By.linkText("Login"));\
+        System.out.println("Clicking on the login element in the main page");\
+        login.click();\
+ \
+        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);\
+ \
+        WebElement email = driver.findElement(By.id("email"));\
+        WebElement password = driver.findElement(By.id("password"));\
+        WebElement loginButton = driver.findElement(By.id("login-button"));\
+ \
+        email.clear();\
+        System.out.println("Entering the email");\
+        email.sendKeys("your_email");\
+ \
+        password.clear();\
+        System.out.println("entering the password");\
+        password.sendKeys("your_password");\
+ \
+        System.out.println("Clicking login button");\
+        loginButton.click();\
+ \
+        String title = "Welcome - LambdaTest";\
+ \
+        String actualTitle = driver.getTitle();\
+ \
+        System.out.println("Verifying the page title has started");\
+        Assert.assertEquals(actualTitle,title,"Page title doesnt match");\
+ \
+        System.out.println("The page title has been successfully verified");\
+ \
+        System.out.println("User logged in successfully");      \
+    }\
+ \
+    @AfterClass\
+    public void closeBrowser() {\
+        driver.close();\
+ \
+    }\
+}
+sudo
+docker
+sudo print
+anmol
+a
+selenium-side-runner --base-url https://localhost
+sudo 
+sudo docker container start
+sudo 
+sudodocker 
+sudo docker continer starty
+cd..
+cd
+cd,
+cd,,
+cd..\\ 
+\\
+'\
+;\
+edirt\
+exit]\
+exit\
+save\
+quit\
+restrtt\
+restart\
+restart'
+zzzzzzzzzzzzZZZZZXXZZZZZZZZZZZZZZ
+pip install pipenv
+cd tau-intro-selenium-py
+cd tau-intro-selenium-py
+pipenv run python -m pytest
+atomicwrites
+python --version
+pip --version
+pipenv --version
+pipenv install pytest
+pipenv install atomicwrites
+pip
+python -m pytest
+master
+course/develop
+git checkout master
+ git branch course/develop
+git checkout course/develop
+example/2-pytest-setup
+def test_basic_duckduckgo_search():\
+\
+    # Given the DuckDuckGo home page is displayed\
+    # TODO\
+\
+    # When the user searches for "panda"\
+    # TODO\
+\
+    # Then the search result title contains "panda"\
+    # TODO\
+    \
+    # And the search result query is "panda"\
+    # TODO\
+    \
+    # And the search result links pertain to "panda"\
+    # TODO\
+\
+    raise Exception("Incomplete Test")
+def test_basic_duckduckgo_search():\
+\
+    # Given the DuckDuckGo home page is displayed\
+    # TODO\
+\
+    # When the user searches for "panda"\
+    # TODO\
+\
+    # Then the search result title contains "panda"\
+    # TODO\
+    \
+    # And the search result query is "panda"\
+    # TODO\
+    \
+    # And the search result links pertain to "panda"\
+    # TODO\
+\
+    raise Exception("Incomplete Test")
+tests/test_fw.py
+mport pytest\
+import selenium.webdriver\
+\
+\
+@pytest.fixture\
+def browser():\
+\
+  # Initialize the ChromeDriver instance\
+  b = selenium.webdriver.Chrome()\
+\
+  # Make its calls wait up to 10 seconds for elements to appear\
+  b.implicitly_wait(10)\
+\
+  # Return the WebDriver instance for the setup\
+  yield b\
+\
+  # Quit the WebDriver instance for the cleanup\
+  b.quit()\
+\
+\
+mport pytest\
+import selenium.webdriver\
+\
+\
+@pytest.fixture\
+def browser():\
+\
+  # Initialize the ChromeDriver instance\
+  b = selenium.webdriver.Chrome()\
+\
+  # Make its calls wait up to 10 seconds for elements to appear\
+  b.implicitly_wait(10)\
+\
+  # Return the WebDriver instance for the setup\
+  yield b\
+\
+  # Quit the WebDriver instance for the cleanup\
+  b.quit()\
+\
+pages/search.py
+pages/search.py
+class DuckDuckGoResultPage:\
+  \
+  def __init__(self, browser):\
+    self.browser = browser\
+\
+  def result_link_titles(self):\
+    # TODO\
+    return []\
+  \
+  def search_input_value(self):\
+    # TODO\
+    return ""\
+\
+  def title(self):\
+    # TODO\
+    return ""
+from pages.result import DuckDuckGoResultPage\
+from pages.search import DuckDuckGoSearchPage\
+\
+\
+def test_basic_duckduckgo_search(browser):\
+  search_page = DuckDuckGoSearchPage(browser)\
+  result_page = DuckDuckGoResultPage(browser)\
+  PHRASE = "panda"\
+  \
+  # Given the DuckDuckGo home page is displayed\
+  search_page.load()\
+\
+  # When the user searches for "panda"\
+  search_page.search(PHRASE)\
+\
+  # Then the search result title contains "panda"\
+  assert PHRASE in result_page.title()\
+  \
+  # And the search result query is "panda"\
+  assert PHRASE == result_page.search_input_value()\
+  \
+  # And the search result links pertain to "panda"\
+  for title in result_page.result_link_titles():\
+    assert PHRASE.lower() in title.lower()\
+\
+  # TODO: Remove this exception once the test is complete\
+  raise Exception("Incomplete Test")
+implicitly_wait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.by import By\
+from selenium.webdriver.common.keys import Keys
+tests/test_search.py
+git clone https://github.com/AutomationPanda/tau-intro-selenium-py
+sudo
+pip
+exit
+list
+python--v
+python -V
+lits of function
+print(function)
+sudo docker
+sudo
+sudo -h
+sudo -n
+sudo -h
+sudo
+sudo -h
+-h
+ -h
+sodo
+excle
+validate
+sudo --sudo
+sudo
+docker
+sudo docker
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+import keyword
+print (keyoword.kwlist)
+python -v
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/hello_world.py
+/usr/local/bin/python3.11 "/Users/anmol/from selenium import webdriver.py"
+/usr/local/bin/python3.11 "/Users/anmol/from selenium import webdriver.py"
+sudo 
+python --V
+python -v]
+python __V
+python -V
+logs
+print ()\
+\
+\
+\
+\
+exit
+pip3 list
+wheel
+virtualenv
+pip install selenium
+selenium -V
+pip list
+selenium
+selenium list
+from selenium import webdriver\
+from selenium.webdriver.common.keys import Keys\
+from selenium.webdriver.common.by import By\
+\
+driver = webdriver.Firefox()\
+driver.get("http://www.python.org")\
+assert "Python" in driver.title\
+elem = driver.find_element(By.NAME, "q")\
+elem.clear()\
+elem.send_keys("pycon")\
+elem.send_keys(Keys.RETURN)\
+assert "No results found." not in driver.page_source\
+driver.close()\
+\
+\
+\
+\
+\
+\
+\
+\
+from selenium import webdriver\
+from selenium.webdriver.common.keys import Keys\
+from selenium.webdriver.common.by import By\
+\
+driver = webdriver.Firefox()\
+driver.get("http://www.python.org")\
+assert "Python" in driver.title\
+elem = driver.find_element(By.NAME, "q")\
+elem.clear()\
+elem.send_keys("pycon")\
+elem.send_keys(Keys.RETURN)\
+assert "No results found." not in driver.page_source\
+driver.close()\
+\
+\
+\
+exit
+from selenium import webdriver
+https://github.com/kiteco/kite-installer.git
+gh repo clone kiteco/kite-installer
+pip istall webdriver-manager
+pip install webdriver_manager
+sudo
+pip install
+pip install --upgrade pip
+import webdriver
+install webdriver
+pip driver
+pip dir
+pip webdriver_manager
+pip webdriver_manager
+pip install  webdriver_manager
+sudo 
+sudo -l
+dir
+cd..\\
+
+conda
+seleium
+lost
+grafana
+grafana lab
+install grafana
+sudo
+docker
+sudo docker
+python -V
+upgrde
+upgreD
+EXI
+EXIT
+CLEAR
+next
+sudo
+pip install
+exit
+adb
+adb install
+appium <ext-type> list [--installed] [--updates] [--json]
+quit
+exit
+import appium
+> npm install -g appium@next
+> npm install -g appium@next
+ appium driver list
+ appium driver list
+private AppiumDriverLocalService buildAppiumService () {\
+   final var logFile = Path.of (getProperty ("user.dir"), "logs", "appium.log")\
+       .toFile ();\
+   final var builder = new AppiumServiceBuilder ();\
+   return builder.withIPAddress (System.getProperty ("host", "127.0.0.1"))\
+       .usingPort (Integer.parseInt (System.getProperty ("port", "4723")))\
+       .withLogFile (logFile)\
+       .withArgument (GeneralServerFlag.BASEPATH, "/wd/hub")\
+       .withArgument (GeneralServerFlag.USE_DRIVERS, "uiautomator2")\
+       .withArgument (GeneralServerFlag.USE_PLUGINS, "appium-dashboard")\
+       .withArgument (GeneralServerFlag.SESSION_OVERRIDE)\
+       .withArgument (GeneralServerFlag.ALLOW_INSECURE, "chromedriver_autodownload")\
+       .build ();\
+}
+private Capabilities buildCapabilities () {\
+   final var deviceName = getProperty (DEVICE_NAME_KEY, "Pixel_6_Pro");\
+   final var deviceVersion = getProperty (DEVICE_VERSION_KEY, "11");\
+   final var options = new UiAutomator2Options ();\
+   options.setPlatformName ("Android")\
+       .setPlatformVersion (deviceVersion)\
+       .setDeviceName (deviceName)\
+       .setAvd (deviceName)\
+       .setApp (Path.of (getProperty ("user.dir"), "src/test/resources/proverbial.apk")\
+           .toString ())\
+       .setAutoGrantPermissions (true)\
+       .setIsHeadless (parseBoolean (getProperty ("headless", "false")));\
+   return options;\
+}
+options.setCapability ("appium:settings[setting-name]", "value");\
+\
+
+> appium plugin install --source=npm appium-dashboard\
+
+DIR
+dier
+dir
+cd
+import keyword
+print (keyword.list(keyword))
+import keyword\
+print(keyword.kwlist)
+import keyword\
+print(keyword.kwlist)
+python -v
+import keyword
+print (keyword.list(keyword))
+pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install -r requirements.txt
+export LT_USERNAME="YOUR_USERNAME" export LT_ACCESS_KEY="YOUR ACCESS KEY"
+sudo 
+sudo docker
+sudo
+dir
+pip
+download
+  log
+collect
+log collect
+erase
+log
+sudo
+sudo
+sudo 
+--u
+-
+-u
+CREATE TABLE vehicle_numbers (\
+  id INT NOT NULL AUTO_INCREMENT,\
+  vehicle_number VARCHAR(255) NOT NULL,\
+  PRIMARY KEY (id)\
+);
+CREATE DATABASE my_database;\
+    CREATE TABLE vehicle_numbers (\
+  id INT NOT NULL AUTO_INCREMENT,\
+  vehicle_number VARCHAR(255) NOT NULL,\
+  PRIMARY KEY (id)\
+);
+ultralytics
+pip list
+from selenium import webdriver\
+\
+driver = webdriver.Chrome(executable_path=/Users/anmol/Downloads/chromedriver_mac64)\
+\
+driver.get("https://demo.jarvis.live/")
+from selenium import webdriver 
+pip install webdriver-manager
+pip install --upgrade pip
+from selenium import webdriver\
+\
+driver = webdriver.Chrome(executable_path=/Users/anmol/Downloads/chromedriver_mac64)\
+\
+driver.get("https://demo.jarvis.live/")
+pip install webdriver-manager
+pip install webdriver-manager
+pip install --upgrade pip
+python te
+ls
+cd venv
+python test.py
+conda env list
+ls
+xconda activate automation
+conda activate automation
+pwd
+cd PycharmProjects/pythonProject1/venv
+python test.py
+python
+source /Users/anmol/PycharmProjects/pythonProject1/venv/bin/activate
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+/Users/anmol/PycharmProjects/pythonProject1/venv/bin/python /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+pip install selenium
+pip install
+pip
+python --version 
+pip3 freeze |grep -i  sele
+which python 
+conda info --env 
+which python 
+virtualenv /Users/anmol/PycharmProjects/pythonProject/venv/bin/python
+ls 
+conda deaactivate 
+conda deactivate 
+ls /Users/anmol/PycharmProjects/pythonProject/venv/bin/python
+vertualenv /Users/anmol/PycharmProjects/pythonProject/venv/bin/python 
+virtualenv /Users/anmol/PycharmProjects/pythonProject/venv/bin/python
+virtualenv /Users/anmol/PycharmProjects/pythonProject/venv/bin/python
+/Users/anmol/miniconda3/envs/py3.8  /Users/anmol/PycharmProjects/pythonProject1/venv/test.py  \
+
+ls /Users/anmol/PycharmProjects/pythonProject1/venv/test.py
+ls /Users/anmol/PycharmProjects/pythonProject1/venv/test.py -alth
+ls /Users/anmol/PycharmProjects/pythonProject1/venv/test.py -alth
+ls Users/anmol/PycharmProjects/pythonProject1/venv/test.py -alth
+pwd
+ls venv/test.py -alth
+ls venv/test.py -alt
+ls venv/test.py -alth
+cd venv
+ls
+ls -alth
+whoami
+sudo chown anmol:anmol test.py 
+ chown anmol:anmol test.py 
+/Users/anmol/miniconda3/envs/py3.8  /Users/anmol/PycharmProjects/pythonProject1/venv/test.py  \
+
+sudo /Users/anmol/miniconda3/envs/py3.8  /Users/anmol/PycharmProjects/pythonProject1/venv/test.py  \
+
+pip
+--python
+python --v
+python -V
+pip
+pip list
+selenium
+pip selenium
+pip kill
+lill
+kill
+ --debug
+cryptography
+pip cryptography
+ls
+npm i --location=global appium\
+
+npm i --location=global appium\
+
+npm i --location=global appium\
+
+npm i --location=global appium\
+
+appium
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+ip config
+config
+ip
+pip
+pip upgreade
+cd docker
+helo
+print 
+miniconda
+conda
+conda run
+conda info
+conda upgrade
+base
+conda base
+ls
+PycharmProjects
+Postman
+run Postman
+run
+exit
+nind a rahe hai mast
+cd /home/Anmol/ && unzip edge_processor_dvr_test_result.zip
+/Users/anmol/Downloads/edge_processor_dvr_test_result.zip
+/Users/anmol/Downloads/edge_processor_dvr_test_result.zip&& unzip edge_processor_dvr_test_result.zip
+/Users/anmol/Downloads/edge_processor_dvr_test_result.zip&& unzip edge_processor_dvr_test_result.zip
+/Users/anmol/Downloads/edge_processor_dvr_test_result.zip &&  unzip edge_processor_dvr_test_result.zip
+/Users/anmol/Downloads/edge_processor_dvr_test_result.zip&& unzip edge_processor_dvr_test_result.zip
+cd /home/Anmol/ && unzip edge_processor_dvr_test_result.zip/Users/anmol/Downloads/&& unzip edge_processor_dvr_test_result.zip 
+/Users/anmol/Downloads/&& unzip edge_processor_dvr_test_result.zip 
+/Users/anmol/Downloads/&& unzip edge_processor_dvr_test_result.zip 
+/Users/anmol/Downloads/&& unzip edge_processor_dvr_test_result.zip 
+/Users/anmol/Downloads/&& unzip edge_processor_dvr_test_result.zip 
+unzip
+unzip /Users/anmol/Downloads/edge_processor_dvr_test_result.zip
+cd /home/Anmol/ && unzip edge_processor_dvr_test_result.zip/Users/anmol/Downloads/&& unzip edge_processor_dvr_test_result.zip 
+unzip /Users/anmol/Downloads/edge_processor_dvr_test_result.zip
+mytuple = ('Asif' , 'Basit' , 'John' , 'Michael')\
+for i in mytuple:\
+ print(i)
+node -v
+cd node-test\
+npm init
+{\
+  "name": "node-test",\
+  "version": "1.0.0",\
+  "description": "Test for npm projects",\
+  "main": "index.js",\
+  "scripts": {\
+    "test": "test"\
+  },\
+  "author": "Chris Mills",\
+  "license": "MIT"\
+}
+npm install --global gulp-cli
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+/usr/local/bin/python3.11 /Users/anmol/Documents/code/import_requests.py
+ipconfig
+conggig
+configip
+ipconfig
+sudo apt-get install git
+sudo apt-get install git
+sudo apt-get install git
+sudo apt-get install git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ brew install wget
+$ sudo port install git
+cd/Absolute Path
+cd..
+clear
+/Users/anmol/PycharmProjects/pythonProject1/LearnPython/__init__.py
+cd//Users/anmol/PycharmProjects/pythonProject1/LearnPython/__init__.py
+cd..
+clear
+git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ brew install wget\
+
+$ sudo port install git
+$ brew install git-gui\
+\
+
+brew install git
+$ brew install git
+git version
+brew install git
+git add
+commit
+push
+git init -b main\
+
+clear
+git version
+git push
+git remote add Python https://github.com/Anmolkrm0/Learningpy
+git remote add Python https://github.com/Anmolkrm0/Learningpy
+git pull
+git branch 
+git branch ls
+git commit
+git add
+git config
+-l
+git add
+git add .
+git push  --force
+git push --set-upstream Python main
+git pull https://github.com/PramodDutta/Software-Testing-Projects4
+ git config pull.rebase false
+git commit  git config pull.rebase false
+git commit
+git -c credential.helper= -c core.quotepath=false -c log.showSignature=false
+git push anmol
+git push https://github.com/Anmolkrm0/Learningpy/tree/python
+git fatal
+git push https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy/branches
+git push https://github.com/Anmolkrm0/Learningpy
+git push --help
+git clone https://github.com/SeleniumHQ/selenium-ide
+ls
+selenium-ide
+cd selenium-ide
+ls
+test.config.js
+git add test.config.js
+add git test.config.js
+pnpm -r i
+~$ docker run --rm -it --name das -v ~/.das:/root/.das -v `pwd`:/app -p 8050:8050 snovvcrash/divideandscan
+cd..
+cd
+~$ docker run --rm -it --name das -v ~/.das:/root/.das -v `pwd`:/app -p 8050:8050 snovvcrash/divideandscan
+git push https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy
+git pull https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy
+git commit https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy
+git pull
+git push https://github.com/Anmolkrm0/Learningpy
+git commit https://github.com/Anmolkrm0/Learningpy
+git commit
+PycharmProjects/
+git add PycharmProjects/
+git add PycharmProjects/
+git push
+git push 10987	Retail V2 | Aggregate | By Default if proper coordinates are not entered show, India Map
+git
+git --v
+git -v
+git dump
+git
+git==v
+gitlab
+lab\\
+lab
+ld
+ls
+dir
+ls
+cd miniconda3
+dir
+cd..
+cd..
+cd
+c
+dd
+git pull https://github.com/PramodDutta/PyLearning1x
+git -c
+git add remote https://github.com/PramodDutta/PyLearning1x
+git https://github.com/PramodDutta/PyLearning1x
+git push https://github.com/PramodDutta/PyLearning1x
+git status
+git init
+git commit -m
+m
+git commit -m "Initial commit."
+git remote add
+git remote add -m
+git remote add -m "New"
+git remote add -m"https://github.com/Anmolkrm0/Learningpy/tree/python"
+git remote add origin https://github.com/Anmolkrm0/Learningpy/tree/python
+git remote add remote python
+git stash
+git status
+git commit
+git commit https://github.com/Anmolkrm0/Learningpy/branches
+git show
+git pull https://github.com/PramodDutta/Software-Testing-Projects
+git status
+PycharmProjects
+clear
+git status
+git status
+Library/Logs/DiagnosticReports/SiriSearchFeedback-2023-10-11-104346.diag
+Library/com.apple.internal.ck/
+PycharmProjects/
+from selenium import webdriver.py\
+
+Pictures/
+cd..
+cd PycharmProjects/
+dir
+ls
+list
+ls
+ls
+cdminiconda3/
+ld
+ls
+ls
+cd..
+cd
+miniconda3/
+ls
+cd 9_OCT_2023
+ls
+print (Lab028.py)
+Lab028.py
+cd Lab028.py
+git push
+git commit 
+git push -m "anmol" 
+git checkout -b Anmol
+remote: git push -u Anmol
+remote: git push -u https://github.com/Anmolkrm0/Learningpy/branches
+git
+git push -f
+git help congig
+git push --all
+git push --all
+git push --tags
+git checkout -b main
+git commit -m
+git commit -m "https://github.com/Anmolkrm0/Learningpy"
+git push - "https://github.com/Anmolkrm0/Learningpy.git"
+git push https://github.com/Anmolkrm0/Learningpy.git
+stop
+ls
+git status
+git las
+git log
+git
+git show
+git push https://github.com/Anmolkrm0/Learningpy
+git commit https://github.com/Anmolkrm0/Learningpy/tree/Anmol
+git push https://github.com/Anmolkrm0/Learningpy/tree/Anmol
+git push https://github.com/Anmolkrm0/Learningpy/main
+git push https://github.com/Anmolkrm0/Learningpy/
+git status
+git log
+git push Anmol
+git push https://github.com/Anmolkrm0/Learningpy anmol
+git push into https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy Anmol
+git -m https://github.com/Anmolkrm0/Learningpy
+git push -m"Anmol"
+git add
+git init -b main
+git init && git symbolic-ref HEADhttps://github.com/Anmolkrm0/Learningpy
+$ git commit -m "First commit"
+$ git commit -m "First commit"
+ git commit -m "First commit"
+git push https://github.com/Anmolkrm0/Learningpy
+git log
+git rm -r --cached Downloads
+git rm - --downloads
+hello
+git log
+git log
+git pull 
+git pull https://github.com/PramodDutta/PyLearning1x
+git push https://github.com/Anmolkrm0/Learningpy
+git commit
+git status
+git log
+git push
+git pull
+git pull https://github.com/PramodDutta/PyLearning1x
+git prune
+git pull https://github.com/PramodDutta/PyLearning1x
+ls
+cd 13_OCT_2023
+ls
+cd Lab030.py
+ls
+print Lab030.py
+Lab030.py
+git push https://github.com/Anmolkrm0/Learningpy
+git commit https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy
+git pull https://github.com/PramodDutta/PyLearning1x
+git pull https://github.com/PramodDutta/PyLearning1x.git
+git commit https://github.com/PramodDutta/PyLearning1x.git
+git commit -m https://github.com/Anmolkrm0/Learningpy
+git push https://github.com/Anmolkrm0/Learningpy
+git pull https://github.com/PramodDutta/PyLearning1x
+git pull https://github.com/PramodDutta/PyLearning1x
+git commit -m Anmol
+ git commit --amend --reset-author
+git log
+git push https://github.com/Anmolkrm0/Learningpy/tree/Anmol
+git push https://github.com/Anmolkrm0/Learningpy.git
+git ls
+git pull https://github.com/PramodDutta/PyLearning1x
+git log
+git 
+git log
+git commit
+clear
+git pull https://github.com/PramodDutta/PyLearning1x
+git commit -m anmol
+git push https://github.com/Anmolkrm0/Learningpy.git
+clear
+git log
+git ls
+git --help
+giit
+git
+git push
+git push - 
+git push https://github.com/Anmolkrm0/Learningpy.git
+git up-to-date
+git --help
+clear
+git log
+age = int(input("Enter your age: "))\
+print (age)\
+if age > 18:\
+    print ("you can watch movie ")\
+else :\
+    print ("you can't")
+git pull https://github.com/PramodDutta/PyLearning1x
+git status
+git pull https://github.com/PramodDutta/PyLearning1x
+clear
+git 
+git commit --m anmol
+git pull https://github.com/PramodDutta/PyLearning1x

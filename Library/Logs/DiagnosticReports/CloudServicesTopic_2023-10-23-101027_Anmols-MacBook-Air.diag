@@ -1,2 +1,0 @@
-{"timestamp":"2023-10-23 10:10:27.23 +0530","bug_type":"226","os_version":"macOS 12.6 (21G115)"}
-{"postTime":1698036027231.4219,"events":[{"eventTime":1698036027230.1011,"product":"macOS","success_count":0,"build":"21G115","eventType":"CloudServicesHealthSummary","soft_failure_count":0,"eventLinkID":"EA140DDB-7A8C-4895-B78B-E41401E0856E","topic":"xp_coreos_securebackup","modelid":"MacBookAir10,1","hard_failure_count":0,"lastUploadTime":1697718956490}]}

@@ -1,1 +1,0 @@
-import{b as a}from"./PGNR3OFA.js";import{j as r}from"./QZVUH6Z4.js";import{f as o}from"./PQ35KENF.js";var e=o(a());var t=o(r()),f=(0,e.createSvgIcon)((0,t.jsx)("path",{d:"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"}),"OpenInNewOutlined");export{f as a};

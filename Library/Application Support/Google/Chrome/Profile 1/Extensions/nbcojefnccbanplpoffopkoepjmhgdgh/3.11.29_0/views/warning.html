@@ -1,0 +1,55 @@
+<div id="proxy-warning-dialog" class="mdc-dialog mdc-dialog--fullscreen">
+  <div class="mdc-dialog__container">
+    <div
+      class="mdc-dialog__surface"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content"
+    >
+      <div class="mdc-dialog__header">
+        <button
+          id="close-proxy-ext-warning"
+          class="mdc-icon-button material-icons mdc-dialog__close"
+          data-mdc-dialog-action="close"
+        >
+          close
+        </button>
+        <h2 class="mdc-dialog__title" id="my-dialog-title">Warning</h2>
+        <div id="go-to-disable-warning" class="proxyext-warning__disable">
+          Disable this warning
+        </div>
+      </div>
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        <div>
+          <p>Following VPN services might interfere with Hoxx VPN.</p>
+          <p>
+            Please deactive these extensions in order to have an flawless Hoxx VPN
+            experience.
+          </p>
+          <div></div>
+        </div>
+        <div>
+          <ul
+            class="mdc-list mdc-list--two-line mdc-list--avatar-list"
+            id="proxy-ext-list"
+          >
+            <li
+              class="mdc-list-item"
+              tabindex="0"
+              data-mdc-dialog-action="none"
+            >
+              <span class="mdc-list-item__text"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mdc-dialog__actions" id="warning-actions">
+        <button class="mdc-button mdc-button--raised" id="warning-continue">
+          <span class="mdc-button__label">Continue</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>

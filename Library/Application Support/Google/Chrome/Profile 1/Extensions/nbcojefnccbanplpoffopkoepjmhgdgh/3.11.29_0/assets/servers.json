@@ -1,0 +1,35 @@
+{
+  "version": 4,
+  "update_interval_hours": 6,
+  "settings": {
+    "tierbase_search_timeout": 15000,
+    "mainbase_search_timeout": 20000,
+    "tierbase_api_timeout": 35000,
+    "mainbase_api_timeout": 30000,
+    "proxy_search_timeout": 30000,
+    "mirror_timeout": 30000
+  },
+  "mainbase": [
+    "https://eggx.particle.pics",
+    "https://vsxm.particle.pics",
+    "https://okog.rounds.cc",
+    "https://collapserz.uk",
+    "https://flyingsq.uk",
+    "https://frogger.uk",
+    "https://kwmaster.uk",
+    "https://netsalez.uk",
+    "https://sewere77.uk"
+  ],
+  "tierbase": [
+    "https://api.doneverdrop.com",
+    "https://sublimity.uk",
+    "https://wemanageit.uk",
+    "https://saveitapp.uk"
+  ],
+  "t": 1697800910502,
+  "mirrors": [
+    "https://bitbucket.org/the7c/update/raw/master/ip/ens4/data.json",
+    "https://raw.githubusercontent.com/the7c/update/master/src/js/data.json",
+    "https://codeberg.org/7c/rawsilo/raw/branch/main/src/js/data.json"
+  ]
+}

@@ -1,0 +1,110 @@
+
+<div class="contact-view" id="contact-mode">
+    
+    <div id="response-loading" role="progressbar" style="display: none;"
+        class="mdc-linear-progress mdc-linear-progress--indeterminate" aria-label="Example Progress Bar"
+        aria-valuemin="0" aria-valuemax="1" aria-valuenow="0">
+        <div class="mdc-linear-progress__buffer">
+            <div class="mdc-linear-progress__buffer-bar"></div>
+            <div class="mdc-linear-progress__buffer-dots"></div>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+    </div>
+    <div class="contact-view__close-button-container" >
+        <span class="material-icons contact-view__close-button-container__btn close-btn" id="close-btn">
+            close
+            </span>
+    </div>
+    <div class="contact-view__container">
+        <div class="contact-view__form">
+            <h2 style="text-align: center; margin:0px 0px 10px 0px">Contact Support</h2>
+            <label class="mdc-text-field mdc-text-field--outlined" id="email-field" style="width: 100%; margin-bottom:10px; height:45px">
+                <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" >Email</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="email" id="email-input" class="mdc-text-field__input" aria-labelledby="email-field"
+                 required>
+
+            </label>
+            <div id="email-error" class="contact-view__error-msg"  style="margin-bottom: 10px;">
+                {RegisterErrorEmail}
+            </div>
+
+            <label class="mdc-text-field mdc-text-field--outlined" id="subject-field" style="width: 100%; margin:5px 0px; height:45px">
+                <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" >Subject</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="text" id="subject-input" class="mdc-text-field__input" aria-labelledby="subject-field"
+                 required>
+
+            </label>
+            <div id="subject-error" class="contact-view__error-msg">
+                Subject too short
+            </div>
+
+            <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label" id="message-field" style="margin-bottom:5px;">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <span class="mdc-text-field">
+                  <textarea style="padding:0px;" class="mdc-text-field__input" id="message-input"
+                  placeholder="Please enter the details of your request. Our support staff will respond as soon as possible.*"
+                  rows="6" cols="30"></textarea>
+                </span>
+              </label>
+
+            <div id="message-error" class="contact-view__error-msg">
+               Description too short. 
+            </div>
+            
+            <div class="contact-view__response-error" id="response-error">
+
+            </div>
+
+            <div class="contact-view__submit-btn-container">
+                <button class="mdc-button mdc-button--raised" id="submit-btn">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__focus-ring"></span>
+                    <span class="mdc-button__label">Submit</span>
+                  </button>
+            </div>
+         
+        </div>
+    </div>
+
+</div>
+
+<div class="contact-view__success" id="contact-success">
+    <div class="contact-view__close-button-container" >
+        <span class="material-icons contact-view__close-button-container__btn close-btn" id="close-btn">
+            close
+            </span>
+    </div>
+    <div class="contact-view__success__container">
+        Your request was successfully submitted.
+    </div>
+</div>
+
+<div id="maintenance-mode" class="maintenance-mode">
+    <i class="material-icons maintenance-mode__close" id="maintenance-mode-close-icon">close</i>
+    <div class="maintenance-mode__container">
+      <div class="maintenance-mode__icon"><i class="material-icons">build</i></div>
+      <div id="maintenance-msg" class="maintenance-mode__message">
+  
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,6 @@
+{
+   "example": {
+      "description": "Hello text for the popup.",
+      "message": "Hello, React!"
+   }
+}

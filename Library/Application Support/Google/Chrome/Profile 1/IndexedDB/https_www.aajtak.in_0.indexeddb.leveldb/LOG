@@ -1,0 +1,6 @@
+2023/12/09-10:01:41.153 14f03 Creating DB /Users/anmol/Library/Application Support/Google/Chrome/Profile 1/IndexedDB/https_www.aajtak.in_0.indexeddb.leveldb since it was missing.
+2023/12/09-10:01:41.211 14f03 Reusing MANIFEST /Users/anmol/Library/Application Support/Google/Chrome/Profile 1/IndexedDB/https_www.aajtak.in_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/09-10:08:41.795 7103 Level-0 table #5: started
+2023/12/09-10:08:41.814 7103 Level-0 table #5: 3028 bytes OK
+2023/12/09-10:08:41.833 7103 Delete type=0 #3
+2023/12/09-10:08:41.834 7103 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

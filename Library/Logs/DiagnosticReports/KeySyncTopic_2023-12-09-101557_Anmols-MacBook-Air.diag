@@ -1,0 +1,2 @@
+{"timestamp":"2023-12-09 10:15:57.24 +0530","bug_type":"226","os_version":"macOS 12.6 (21G115)"}
+{"postTime":1702097157245.7129,"events":[{"eventTime":1702097157229.3511,"product":"macOS","success_count":0,"build":"21G115","eventType":"localHealthSummary","soft_failure_count":0,"eventLinkID":"703175D8-D272-4D90-970E-3D5B67C360D7","topic":"xp_sear_keysync","modelid":"MacBookAir10,1","hard_failure_count":0,"lastUploadTime":1701713575432}]}

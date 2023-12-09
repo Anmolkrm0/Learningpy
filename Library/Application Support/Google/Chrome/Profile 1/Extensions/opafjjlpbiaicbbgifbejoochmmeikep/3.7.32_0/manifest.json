@@ -1,0 +1,43 @@
+{
+   "action": {
+   },
+   "author": {
+      "name": "www.tealhq.com",
+      "url": "https://www.tealhq.com/"
+   },
+   "background": {
+      "service_worker": "src/background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "src/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "default-src 'self'; script-src 'self' ; style-src 'self' 'unsafe-inline'; img-src 'self' https://app.tealhq.com data:; font-src 'self'; connect-src https://auth.service.tealhq.com https://auth-staging.tealhq.com https://company.service.tealhq.com https://company-staging.tealhq.com http://localhost:3003 http://localhost:3001"
+   },
+   "default_locale": "en",
+   "description": "The better way to job search. Save Jobs, Contacts, Companies & Resumes in one place.",
+   "differential_fingerprint": "1.d54bf24a74df8cb71b031c33305bbb8014fe19aa0936d4a60c19119cd22f28df",
+   "homepage_url": "https://tealhq.com",
+   "host_permissions": [ "https://*.tealhq.com/*" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo0ABlOS8XgXPYOwjZLBLSrOSDZoXh6wTQD8mKZfA6Zl2H66cVw6XF209yzFFyc/H5ab9G5c86dX6NKtDnuFQJeiwHs8yxu4fI/jQcLMQHUNvd4TeJ2BwONo3Lu7LkZlz1b9R8l9FdXazowVJmJqOk/yasooLIYR8bnsPPFOEcK3RLGb+808oYkPk/zeFfaQeYzfLUkZ4bnmtw+qM9HrjgAd6y9FmER/kZRrZpWlhcT9FMFARDfqSlX5RMNajMC/5gnKU0tCP0tIZswnmMgW1vTbE7heIi3I+A+Wi3U8ATC1xYPUpFucC9PXNQHDWKX0JWm1GjUP25Qr/VP+GAV3gcQIDAQAB",
+   "manifest_version": 3,
+   "name": "Teal - Free Job Search & Contacts Tracker",
+   "permissions": [ "activeTab", "alarms", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.7.32",
+   "web_accessible_resources": [ {
+      "matches": [ "https://app.tealhq.com/*" ],
+      "resources": [ "content/images/logo.svg", "content/videos/pinning.mp4", "content/videos/full_process.mp4", "content/videos/selecting_jobs.mp4", "content/videos/pinning.mp4" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*", "\u003Call_urls>" ],
+      "resources": [ "/images/*.svg", "/images/*.png", "/fonts/*.woff", "style.css" ]
+   } ]
+}

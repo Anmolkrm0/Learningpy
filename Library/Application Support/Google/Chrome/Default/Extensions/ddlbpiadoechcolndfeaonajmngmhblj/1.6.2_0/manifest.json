@@ -1,0 +1,83 @@
+{
+   "author": "compose.ai",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "assets/compose_logo_2x.png",
+      "default_popup": "popup.html",
+      "default_title": "Compose AI"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "general.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "mail.google.com" ],
+      "js": [ "gmail.js" ],
+      "matches": [ "*://mail.google.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": true,
+      "hostnames": [ "docs.google.com" ],
+      "js": [ "gdocsFallback.js" ],
+      "matches": [ "*://docs.google.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "docs.google.com" ],
+      "js": [ "gdocs.js" ],
+      "matches": [ "*://docs.google.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "mail.superhuman.com" ],
+      "js": [ "superhuman.js" ],
+      "matches": [ "*://mail.superhuman.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "outlook.office.com", "outlook.office365.com", "outlook.live.com" ],
+      "js": [ "outlook.js" ],
+      "matches": [ "*://outlook.office.com/*", "*://outlook.office365.com/*", "*://outlook.live.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "www.linkedin.com", "linkedin.com" ],
+      "js": [ "linkedin.js" ],
+      "matches": [ "*://www.linkedin.com/*", "*://linkedin.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "guide.compose.ai" ],
+      "js": [ "guide.js" ],
+      "matches": [ "*://guide.compose.ai/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "hostnames": [ "web.whatsapp.com" ],
+      "js": [ "whatsapp.js" ],
+      "matches": [ "*://web.whatsapp.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Accelerate your writing with AI",
+   "differential_fingerprint": "1.3af5b31d6fad717add043a568652bbfd40bf2ac32226b800af826991df99d693",
+   "externally_connectable": {
+      "matches": [ "https://mail.google.com/*", "https://*.compose.ai/*", "https://compose-2.webflow.io/*" ]
+   },
+   "icons": {
+      "128": "assets/compose_logo_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoG7scPS+wBDOvu4q9lUMD/p2o+o2Dx1UYU7vi5lEsdJ4JhouL94IIQy8rktSp2aV+QlTndnmV0k38SLG4UsoS+tGZavo0NL8OqWwY8quSdXd78TQp3dlnEclkcXN5DMG6eckWliXmDEJb3u53s0n647LL/6j4fG7MCzCIhXajY1HvZM/ekdXPaWSR3go5zVgjHeIeUWNg14jdBiTE2H0YHoo+zNMyfJjO3nKp6afMX274KrhnPnc2UQzrDfvtYcLMR8sp6jgW/0wAATbJTRNe3dufMcUfEYN1nZptVSuc/maGPTyRZJ+tzQmjOkQYrgAk971LResN2GLbZZnt7xYowIDAQAB",
+   "manifest_version": 2,
+   "name": "Compose AI: AI-powered Writing Tool",
+   "permissions": [ "tabs", "webNavigation", "https://*/", "management", "alarms", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6.2",
+   "version_name": "1.6.2",
+   "web_accessible_resources": [ "assets/compose_logo_128.png", "assets/logo-text.png", "assets/loader.svg", "assets/onboarding-assets/onboarding-tooltip-man.svg", "assets/michael.png", "assets/michael-face.png", "assets/wilson.png", "assets/promo_code_accent_bottom_right.png", "assets/promo_code_accent_top_left.png", "assets/RephraseQuickVideo.mp4", "assets/rephrase_logo.png", "assets/logo-with-text.png", "assets/Inter-Light.ttf", "assets/Inter-Regular.ttf", "assets/Inter-Medium.ttf", "assets/Inter-SemiBold.ttf", "assets/Inter-Black.ttf", "assets/compose-email.svg", "assets/settings.svg", "assets/inline-favorites.svg", "assets/inline-history.svg", "assets/inline-chat.svg", "assets/inline-keep-writing.svg", "assets/party.png", "assets/arrow-up.svg", "assets/green-info.svg", "assets/clock.svg", "assets/search.svg", "assets/search-waves.svg" ]
+}

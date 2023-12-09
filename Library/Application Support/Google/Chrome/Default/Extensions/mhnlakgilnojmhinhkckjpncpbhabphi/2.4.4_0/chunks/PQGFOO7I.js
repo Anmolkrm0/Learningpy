@@ -1,0 +1,1 @@
+import{e as r}from"./R7ESC43Z.js";import{a as l,f as i}from"./IPAGS25B.js";import{f as u}from"./PQ35KENF.js";var o=u(l()),d=(n=200)=>{let e=i(r),[s,a]=(0,o.useState)(e.loading);return(0,o.useEffect)(()=>{let t=null;return e.loading||(t=setTimeout(()=>{a(!1)},n)),a(!0),()=>{t&&clearTimeout(t)}},[e.loading,n]),{smoothConversationLoading:s}},f=d;export{f as a};
